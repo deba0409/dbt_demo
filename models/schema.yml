@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+  - name: customer
+    description: "negative account balance records removed"
+    columns:
+      - name: c_custkey
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: bottom5Cust_acctbal
+    description: "A gold table"
+    
